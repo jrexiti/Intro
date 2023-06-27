@@ -1,2 +1,2 @@
-# selenium_java
+# selenium-java
 Selenium with Java practice.
