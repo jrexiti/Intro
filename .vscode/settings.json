@@ -1,0 +1,11 @@
+{
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Users/jrexiti/Desktop/Resources/selenium-jar/libs/**/*.jar",
+    "/Users/jrexiti/Desktop/Resources/selenium-jar/client-combined-3.141.59-sources.jar",
+    "/Users/jrexiti/Desktop/Resources/selenium-jar/client-combined-3.141.59.jar"
+  ],
+  "java.dependency.packagePresentation": "flat"
+}
