@@ -11,5 +11,10 @@ public class L0X_Scanner {
         String response = s.nextLine();
         System.out.println("You responded with " + response);
 
+        System.out.println("What is your age?");
+
+        int secondResponse = s.nextInt();
+        System.out.println("You responded with " + secondResponse);
+
     }
 }
