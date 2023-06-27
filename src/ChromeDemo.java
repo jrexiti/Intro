@@ -8,7 +8,7 @@ public class ChromeDemo {
 
         WebDriver driver = new ChromeDriver();
 
-        // driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.get("https://www.automationtesting.co.uk");
     }
 
