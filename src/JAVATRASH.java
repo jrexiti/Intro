@@ -1,10 +1,4 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class JAVATRASH {
 
@@ -14,7 +8,7 @@ public class JAVATRASH {
         int N = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        System.out.println(N%2);
+        System.out.println(N % 2);
         if (N % 2 != 0) {
 
         }
