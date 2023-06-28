@@ -25,16 +25,16 @@ public class DynamicDropdowns {
         driver.findElement(By.cssSelector("input[name='origin']")).clear();
         driver.findElement(By.cssSelector("input[name='origin']")).sendKeys("london");
 
-        List<WebElement> origins = new WebDriverWait(driver, 5)
+        List<WebElement> elements = new WebDriverWait(driver, 5)
                 .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("#ui-id-1 li>a>span")));
-        System.out.println(origins.get(0).getText());
+        System.out.println(elements.get(0).getText());
         System.out.println("----------");
 
-        for (WebElement origin : origins) {
-            System.out.println(origin.getText());
+        for (WebElement element : elements) {
+            System.out.println(element.getText());
 
-            if (origin.getText().contains("Luton")) {
-                origin.click();
+            if (element.getText().contains("Luton")) {
+                element.click();
             }
 
         }
