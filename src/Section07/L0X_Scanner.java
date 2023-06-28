@@ -16,5 +16,12 @@ public class L0X_Scanner {
         int secondResponse = s.nextInt();
         System.out.println("You responded with " + secondResponse);
 
+        s.close();
+
+        int qwe = 4;
+
+        String qweS = Integer.toString(qwe);
+        System.out.println(qweS);
+
     }
 }
