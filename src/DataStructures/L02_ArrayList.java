@@ -6,6 +6,8 @@ public class L02_ArrayList {
 
     public static void main(String[] args) {
 
+        // ArrayLists are resizable
+
         ArrayList<String> animal = new ArrayList<String>();
 
         animal.add("Cat");
@@ -13,7 +15,7 @@ public class L02_ArrayList {
         animal.add("Hamster");
         animal.add("Rabbit");
 
-        System.out.println("Index of Dog: " + animal.indexOf("Dog") + "\n" + "Value at index [1]: " + animal.get(1));
+        System.out.println("Index of Dog: " + animal.indexOf("Dog") + "\n" + "Value at index[1]: " + animal.get(1));
 
         for (int i = 0; i < animal.size(); i++) {
 
