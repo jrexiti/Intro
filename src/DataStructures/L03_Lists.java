@@ -1,23 +1,27 @@
 package DataStructures;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class L03_Lists {
 
     public static void main(String[] args) {
 
-        System.setProperty("webdriver.chrome.driver", "/Users/jrexiti/Desktop/Resources/drivers_v1/chromedriver");
+        List<String> elements = new ArrayList<String>();
 
-        WebDriver driver = new ChromeDriver();
+        elements.add("el1");
 
-        driver.manage().window().maximize();
-        driver.get("https://www.automationtesting.co.uk");
-        List<WebElement> elements = driver.findElements(By.cssSelector(".redIcons"));
+        Iterator<String> it = elements.iterator();
+
+        System.out.println(it.hasNext());
+        System.out.println(it.next());
+        System.out.println(it.hasNext());
+        elements.add("el2");
+        System.out.println(it.hasNext());
+        elements.remove(1);
+        System.out.println(it.hasNext());
+
     }
 
 }
