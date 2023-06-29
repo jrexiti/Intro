@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class JSExecutor {
     public static void main(String[] args) {
+
+        // WILL MOST LIKELY NEVER USE THIS
+
         System.setProperty("webdriver.chrome.driver", "/Users/jrexiti/Desktop/Resources/drivers_v1/chromedriver");
 
         WebDriver driver = new ChromeDriver();
